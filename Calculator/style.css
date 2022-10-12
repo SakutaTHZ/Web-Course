@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+button{
+    width: 80px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #5f6368;
+    border: 0;
+    color: aliceblue;
+    margin: 3px 1px;
+}
+button:hover{
+    background-color: #74797e;
+}
+.number{
+    background: #3c4043;
+}
+.number:hover{
+    background: rgba(76, 81, 85)
+}
+.equal{
+    background-color: aquamarine;
+    color: black;
+    font-weight: bolder;
+}
+.equal:hover{
+    background-color: rgb(157, 255, 222);
+}
+input{
+    width: 580px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: transparent;
+    margin-bottom: 10px;
+    text-align: right;
+    color: aliceblue;
+    padding: 10px;
+    font-size: larger;
+}
+.combine{
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    /* background: #5f6368; */
+    border-radius: 4px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.R{
+    width: 100px;
+    height: 35px;
+    border-radius: 0 4px 4px 0;
+}
+.L{
+    position: relative;
+    width: 100px;
+    height: 35px;
+    border-radius: 4px 0 0 4px;
+}
+.L::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #ffffff40;
+    top: 10px;
+    right: -2px;
+}
+.L::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 35px;
+    background: #5f6368;
+    top: 0;
+    right: -2px;
+}
